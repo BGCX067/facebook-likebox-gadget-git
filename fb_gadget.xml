@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+	<ModulePrefs title="Like us on Facebook" />
+	<UserPref name="mypage" display_name="FB page url" default_value="http://www.facebook.com/Parti-Des-Femmes" required="true" />
+	<UserPref name="data_show_faces" display_name="Show faces?" default_value="true" datatype="bool" />
+	<UserPref name="data_stream" display_name="Show data stream?" default_value="false" datatype="bool" />
+	<UserPref name="data_header" display_name="Show FB Header?" default_value="false" datatype="bool" />
+
+	<Content type="html">
+		<![CDATA[
+			<div id="fb-root"></div>
+			<script>
+				(function(d, s, id){
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if( d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+			<div class="fb-like-box" data-href="http://www.facebook.com/Parti-Des-Femmes" data-width="292" data-show-faces="true" data-stream="false" data-header="false"></div>
+		]]>
+	</Content>
+</Module>
