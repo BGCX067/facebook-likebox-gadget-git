@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-	<ModulePrefs title="Like us on Facebook" />
+	<ModulePrefs 
+		title="Like us on Facebook" 
+		author="Guillermo Fernandez"
+		height="200"
+		width="250"
+	/>
 	<UserPref name="fb_page_url" display_name="FB page url" default_value="http://www.facebook.com/Parti-Des-Femmes" required="true" />
 	<UserPref name="data_show_faces" display_name="Show faces?" default_value="true" datatype="bool" />
 	<UserPref name="data_stream" display_name="Show data stream?" default_value="false" datatype="bool" />
@@ -18,7 +23,7 @@
 					fjs.parentNode.insertBefore(js, fjs);
 				}(document, 'script', 'facebook-jssdk'));
 			</script>
-			<div class="fb-like-box" data-href="__UP_fb_page_url__" data-width="292" data-show-faces="__UP_data_show_faces__" data-stream="__UP_data_stream__" data-header="__UP_data_header__"></div>
+			<div class="fb-like-box" data-href="__UP_fb_page_url__" data-width="250" data-height="200" data-show-faces="__UP_data_show_faces__" data-stream="__UP_data_stream__" data-header="__UP_data_header__"></div>
 		]]>
 	</Content>
 </Module>
